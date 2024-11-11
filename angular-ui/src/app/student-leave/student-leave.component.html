@@ -1,0 +1,52 @@
+<div class="content">
+    <div class="breadcrumb">
+      <span>Home / Academic / Subjects</span>
+    </div>
+  
+    <div class="header" style="display: flex; flex-direction: column; gap: 4px;">
+      <div style="margin-bottom: 16px;">Student Leaves</div>
+      <div>
+      <div class="filters">
+        <div>
+        <select>
+          <option>2022-2023</option>
+        </select>
+        <input type="text" placeholder="Search Student" />
+    </div>
+        <button class="add-leave">+ Add New Leave</button>
+      </div>
+    </div>
+    </div>
+  
+    <p-table [value]="students" [paginator]="true" [rows]="10" [responsiveLayout]="'scroll'">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Enrollment Number</th>
+            <th>Student Name</th>
+            <th>Class</th>
+            <th>Section</th>
+            <th>Reason</th>
+            <th>Leave Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+            <th></th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-student>
+          <tr>
+            <td>{{ student.enrollmentNumber }}</td>
+            <td>{{ student.studentName }}</td>
+            <td>{{ student.class }}</td>
+            <td>{{ student.section }}</td>
+            <td>{{ student.reason }}</td>
+            <td>{{ student.leaveDate }}</td>
+            <td>{{ student.status }}</td>
+            <td></td>
+            <td>
+              <div pButton icon="pi pi-eye"></div>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+  </div>
+  

@@ -1,0 +1,102 @@
+.content {
+    padding: 20px;
+    width: calc(100vw - 300px);
+
+    .breadcrumb {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .header {
+        display: flex;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        .filters {
+            display: flex;
+justify-content: space-between;
+            select,
+            input {
+                margin-right: 10px;
+                padding: 5px;
+            }
+
+            .add-leave {
+                background-color: #ffc107;
+                border: none;
+                color: white;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    ::ng-deep .p-datatable .p-datatable-thead>tr>th {
+        padding: 20px;
+        color: var(--surface-800);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: start;
+    }
+
+    ::ng-deep .p-datatable .p-datatable-tbody>tr {
+        color: var(--text-color);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    ::ng-deep .p-datatable .p-datatable-tbody>tr>td {
+        padding: 20px;
+        color: var(--surface-800);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    ::ng-deep .p-datatable-table {
+        border-radius: 12px;
+        border: 1px solid var(--keypad-bg-color);
+    }
+
+    ::ng-deep .p-datatable-thead>tr>th:first-child {
+        border-top-left-radius: 12px;
+    }
+
+    ::ng-deep .p-datatable-thead>tr>th:last-child {
+        border-top-right-radius: 12px;
+    }
+
+    ::ng-deep .p-datatable-tbody>tr:last-child>td:last-child {
+        border-bottom-right-radius: 12px;
+    }
+
+    ::ng-deep .p-datatable-tbody>tr:last-child>td:first-child {
+        border-bottom-left-radius: 12px;
+    }
+
+    ::ng-deep .p-datatable .p-paginator-bottom {
+        background-color: transparent;
+        display: flex;
+        justify-content: end;
+    }
+
+    ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page {
+        border-radius: 8px;
+    }
+
+    ::ng-deep .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+        background: var(--surface-a);
+        border-color: var(--keypad-bg-color);
+        color: var(--text-color);
+    }
+}

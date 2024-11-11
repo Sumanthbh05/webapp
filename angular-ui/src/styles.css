@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: white !important;
+}
+.mdc-text-field {
+    padding: 0 0 0 16px !important;
+}
+.mat-mdc-raised-button:not(:disabled) {
+    color: #0e0e0e !important;
+    background-color: #ffca28 !important;
+}

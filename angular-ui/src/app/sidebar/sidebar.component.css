@@ -1,0 +1,42 @@
+.sidebar {
+    width: 250px;
+    background-color: #002f66;
+    color: white;
+    height: 100vh;
+  
+    .profile {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      background-color: #ffc107;
+  
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+  
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        padding: 10px;
+        cursor: pointer;
+        color: white;
+  
+        &.active {
+          background-color: #ffc107;
+        }
+  
+        a {
+          text-decoration: none;
+          color: white;
+          display: block;
+        }
+      }
+    }
+  }
+  

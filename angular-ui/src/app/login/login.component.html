@@ -1,0 +1,36 @@
+<div class="loginMainParent">
+    <div class="login-page">
+        <div class="login-container">
+          <div class="login-image">
+          </div>
+          <div class="login-form">
+            <div class="form-header">
+              <button mat-button class="btn-login active">Login</button>
+              <button mat-button class="btn-register">Register</button>
+            </div>
+            <h2 style="margin-bottom: 0px;">Welcome</h2>
+            <p style="margin-top: 6px;">Please login to your account</p>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <mat-form-field appearance="fill">
+                <mat-label>Username or Email</mat-label>
+                <input matInput formControlName="username" />
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="password" />
+                <button mat-icon-button matSuffix (click)="hide = !hide">
+                  <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
+                </button>
+              </mat-form-field>
+              <div class="form-actions">
+                <p class="forgot-password">Forgot Password?</p>
+                <button mat-raised-button color="primary" type="submit">OK</button>
+              </div>
+            </form>
+            <button mat-button class="register-btn">Register your School in Our Apps</button>
+            <p class="terms">Terms and Conditions & Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+      
+</div>
